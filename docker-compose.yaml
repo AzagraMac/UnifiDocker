@@ -1,0 +1,30 @@
+---
+version: "2.1"
+services:
+  unifi-controller:
+    image: lscr.io/linuxserver/unifi-controller:6.5.55@sha256:60490356fdb1401edf67ab35e6baa9f2f91fe28dfb51f364e94c402a4aad0746
+    container_name: unifi-controller
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MEM_LIMIT=1024
+      - MEM_STARTUP=1024
+      - TZ=Europe/Madrid
+    volumes:
+      - /root/docker/unifi:/config
+    ports:
+      - 3478:3478/udp
+      - 10001:10001/udp
+      - 8080:8080
+      - 8443:8443
+      - 1900:1900/udp
+      - 8843:8843
+      - 8880:8880
+      - 6789:6789
+      - 5514:5514/udp
+    restart: unless-stopped
+
+networks:
+  unifi_net:
+    driver: bridge
