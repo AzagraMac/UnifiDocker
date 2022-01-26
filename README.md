@@ -8,6 +8,9 @@
        width="200"/>
 </p>
 
+### Requeriments
+- Service docker running
+
 ### Install 
 `git clone https://github.com/AzagraMac/UnifiDocker.git`
 
