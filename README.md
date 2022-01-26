@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/AzagraMac/UnifiDocker/blob/main/docker-logo.png" 
+  <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Symbol.png" 
        width="200"/>
 </p>
 
