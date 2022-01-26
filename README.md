@@ -1,3 +1,5 @@
+[![unifi](https://badgen.net/badge/UniFi/6.5.55?list=|&icon=https://docs.golift.io/svg/ubiquiti_color.svg&color=0099ee "UniFi Products Supported")](https://www.ui.com/download/unifi/)
+
 <p align="center">
   <img src="https://github.com/AzagraMac/UnifiDocker/blob/main/unifi-banner.png"
        width="700"/>
