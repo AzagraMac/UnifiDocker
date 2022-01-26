@@ -2,7 +2,7 @@
 version: "2.1"
 services:
   unifi-controller:
-    image: lscr.io/linuxserver/unifi-controller:6.5.55@sha256:60490356fdb1401edf67ab35e6baa9f2f91fe28dfb51f364e94c402a4aad0746
+    image: linuxserver/unifi-controller:6.5.55
     container_name: unifi-controller
     network_mode: host
     environment:
@@ -10,7 +10,6 @@ services:
       - PGID=1000
       - MEM_LIMIT=1024
       - MEM_STARTUP=1024
-      - TZ=Europe/Madrid
     volumes:
       - /root/docker/unifi:/config
     ports:
